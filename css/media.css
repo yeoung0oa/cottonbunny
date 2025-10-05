@@ -332,8 +332,15 @@
   .buy-right{background-color: #e7a1a1;}
   /* footer__________________________________________________ */
   .footer-right {display: none;}
-  .footer-left{text-align: center;}
+  .footer-left{
+    text-align: center;
+    margin: 0 2rem;
+  }
   .sns{justify-content: center;}
+  .sns-inner{
+  width: 3.5rem;
+  height: 3.5rem;
+  }
   .footer-left p:nth-of-type(2){display: none;}
   footer p {word-break: keep-all;}
 
