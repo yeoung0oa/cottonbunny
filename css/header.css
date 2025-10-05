@@ -1,0 +1,82 @@
+
+.mob_btn,
+.logo-short,
+.mo-header-gnb,
+.mo-header-right,
+.back,
+#mo-section2
+{display: none;}
+
+header{
+  width: 100%;
+  height: 7rem;
+  position: fixed;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+  z-index: 3;
+}
+nav{
+  width: 130rem;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav h1 img.logo-long{width: 24rem}
+ul.header-gnb{display: flex;}
+ul.header-gnb>.main{position: relative;}
+.header-gnb>.main>a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-size: 2.3rem;
+  width: 15rem;
+  height: 7rem;
+  line-height: 7rem;
+  text-transform: uppercase;
+  overflow: hidden;
+}
+.header-gnb>.main>a:hover{color: #A984FF;}
+
+/* sub */
+.header-gnb .sub{
+  display: none;
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  left: 0;
+}
+.header-gnb .sub li{
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  border-radius: 2rem;
+  background-color: #fff;
+  transition: 0.35s;
+}
+.header-gnb .sub li a{font-size: 1.8rem;}
+.header-gnb .sub li:hover a{
+  color: #A984FF;
+  font-weight: bold;
+}
+.header-gnb .sub li:hover{box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;}
+
+.header-right{
+  display: flex;
+  width: 24rem;
+  justify-content: center;
+  column-gap: 2rem;
+  font-size: 2.3rem;}
+
+.header-right a:hover{color: #A984FF;}
+
+/* scrolling */
+.scrolling header{
+  background-color: rgba(255, 255, 255, 0.6);
+  border-bottom: 0.1rem solid #fff;
+}
+.scrolling header:hover{background-color: rgba(255, 255, 255, 1);}

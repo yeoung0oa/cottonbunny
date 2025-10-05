@@ -1,0 +1,116 @@
+body{
+  font-family: "Raleway", "NanumSquareAc", sans-serif;
+  color: #333;
+}
+h2.visual-title{
+  font-size: 5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  word-break: keep-all;
+}
+.visual-btn{font-size: 2.3rem;}
+
+h3.title{
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 10rem auto;
+  text-align: center;
+}
+
+p.name{
+  font-family: "NanumSquareAc", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 900;
+}
+p.desc{font-size: 1.7rem;}
+p.price{
+  font-family: "NanumSquareAc", sans-serif;
+  font-size: 1.8rem;
+}
+p.story{
+  font-size: 2rem;
+  line-height: 3rem;
+  /* font-weight: bold; */
+}
+.tab-card a{
+  font-size: 2rem;
+}
+
+
+#section1 .tab-contents img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.3s;
+}
+
+/* button */
+
+.c-button {
+  color: #000;
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 0.9em 1.6em;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  z-index: 1;
+  font-family: 'Raleway', sans-serif;
+}
+
+.c-button--gooey {
+  color: #A984FF;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border: 4px solid #A984FF;
+  border-radius: 0;
+  position: relative;
+  transition: all 700ms ease;
+}
+
+.c-button--gooey .c-button__blobs {
+  height: 100%;
+  filter: url(#goo);
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: -3px;
+  right: -1px;
+  z-index: -1;
+}
+
+.c-button--gooey .c-button__blobs div {
+  background-color: #A984FF;
+  width: 34%;
+  height: 100%;
+  border-radius: 100%;
+  position: absolute;
+  transform: scale(1.4) translateY(125%) translateZ(0);
+  transition: all 700ms ease;
+}
+
+.c-button--gooey .c-button__blobs div:nth-child(1) {
+  left: -5%;
+}
+
+.c-button--gooey .c-button__blobs div:nth-child(2) {
+  left: 30%;
+  transition-delay: 60ms;
+}
+
+.c-button--gooey .c-button__blobs div:nth-child(3) {
+  left: 66%;
+  transition-delay: 25ms;
+}
+
+.c-button--gooey:hover {
+  color: #fff;
+}
+
+.c-button--gooey:hover .c-button__blobs div {
+  transform: scale(1.4) translateY(0) translateZ(0);
+}
